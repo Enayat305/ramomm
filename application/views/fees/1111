@@ -1,0 +1,10 @@
+extension=php_intl.dll
+$dueDate =$row['due_date'];
+					$stamp = strtotime($dueDate);
+					$newdate=strtotime(date('Y-m-d'));
+					//echo date("M", $newdate);
+					$month = date("M", $stamp);
+					
+					if( $month =='Jul'){
+						echo $month;
+						}	
